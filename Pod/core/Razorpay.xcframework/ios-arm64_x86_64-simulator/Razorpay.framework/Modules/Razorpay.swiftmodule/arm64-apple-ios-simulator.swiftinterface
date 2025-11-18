@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Razorpay
+// swift-compiler-version: Apple Swift version 6.1 effective-4.2 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Razorpay
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
+@_exported import Razorpay
 @_exported import RazorpayCore
 import Swift
 import UIKit
@@ -12,6 +13,8 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class RazorpayCheckout : ObjectiveC.NSObject {
   @objc public static let shared: Razorpay.RazorpayCheckout
+  @objc final public var upiTurbo: (any RazorpayCore.UPITurboPlugin)?
+  @objc final public var upiTurboUI: (any RazorpayCore.UPITurboUIPlugin)?
   @objc deinit
 }
 extension Razorpay.RazorpayCheckout {

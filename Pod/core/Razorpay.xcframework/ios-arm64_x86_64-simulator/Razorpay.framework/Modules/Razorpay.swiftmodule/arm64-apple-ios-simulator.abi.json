@@ -19,6 +19,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Razorpay",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Razorpay"
       },
       {
@@ -100,6 +110,252 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upiTurbo",
+            "printedName": "upiTurbo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboPlugin",
+                    "printedName": "any RazorpayCore.UPITurboPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(py)upiTurbo",
+            "mangledName": "$s8Razorpay0A8CheckoutC8upiTurbo0A4Core14UPITurboPlugin_pSgvp",
+            "moduleName": "Razorpay",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)upiTurbo",
+                "mangledName": "$s8Razorpay0A8CheckoutC8upiTurbo0A4Core14UPITurboPlugin_pSgvg",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboPlugin",
+                        "printedName": "any RazorpayCore.UPITurboPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)setUpiTurbo:",
+                "mangledName": "$s8Razorpay0A8CheckoutC8upiTurbo0A4Core14UPITurboPlugin_pSgvs",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Razorpay0A8CheckoutC8upiTurbo0A4Core14UPITurboPlugin_pSgvM",
+                "mangledName": "$s8Razorpay0A8CheckoutC8upiTurbo0A4Core14UPITurboPlugin_pSgvM",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upiTurboUI",
+            "printedName": "upiTurboUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UPITurboUIPlugin",
+                    "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                    "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(py)upiTurboUI",
+            "mangledName": "$s8Razorpay0A8CheckoutC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvp",
+            "moduleName": "Razorpay",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)upiTurboUI",
+                "mangledName": "$s8Razorpay0A8CheckoutC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvg",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RazorpayCore.UPITurboUIPlugin)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UPITurboUIPlugin",
+                        "printedName": "any RazorpayCore.UPITurboUIPlugin",
+                        "usr": "c:@M@RazorpayCore@objc(pl)UPITurboUIPlugin"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Razorpay@objc(cs)RazorpayCheckout(im)setUpiTurboUI:",
+                "mangledName": "$s8Razorpay0A8CheckoutC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvs",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Razorpay0A8CheckoutC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvM",
+                "mangledName": "$s8Razorpay0A8CheckoutC10upiTurboUI0A4Core16UPITurboUIPlugin_pSgvM",
+                "moduleName": "Razorpay",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -2773,16 +3029,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Razorpay",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2805,56 +3051,56 @@
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5683,
+      "offset": 5826,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6222,
+      "offset": 6365,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6816,
+      "offset": 6959,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7433,
+      "offset": 7632,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 2946,
+      "offset": 3050,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 3512,
+      "offset": 3616,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 4141,
+      "offset": 4295,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ramprasad.a\/Documents\/projects\/CheckoutModularisation\/razorpay-ios\/RazorpayIOS\/RazorpayWrapper\/RazorpayWrapper+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 4576,
+      "offset": 4784,
       "length": 4,
       "value": "true"
     }
