@@ -38,6 +38,7 @@ class WebCheckoutVC: UIViewController, WKScriptMessageHandler {
 //            configuration.limitsNavigationsToAppBoundDomains = false
 //        }
         self.wkWebView = WKWebView(frame: self.view.frame, configuration: configuration)
+        self.wkWebView.accessibilityLabel = "main_webview"
 //        self.wkWebView = WKWebView(frame: .zero)
         self.razorpay = RazorpayCheckout.initWithKey(payload?.key ?? "", andDelegate: self, withPaymentWebView: wkWebView)
         self.wkWebView.navigationDelegate = self
