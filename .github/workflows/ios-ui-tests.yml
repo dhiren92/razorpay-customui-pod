@@ -26,8 +26,10 @@ jobs:
         run: |
           xcrun simctl list
 
-      - name: Install CocoaPods
-        run: sudo gem install cocoapods
+      - name: Install CocoaPods (latest, with compatible xcodeproj)
+        run: |
+          sudo gem uninstall cocoapods xcodeproj -aIx || true
+          sudo gem install cocoapods xcodeproj --no-document
 
       - name: Install pods for Example app
         working-directory: Example
