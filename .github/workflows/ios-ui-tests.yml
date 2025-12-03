@@ -10,13 +10,13 @@ permissions:
 
 jobs:
   ui-tests:
-    runs-on: macos-14
+    runs-on: macos-15
 
     strategy:
       fail-fast: false
       matrix:
         device: [ "iPhone 15" ]
-        os: [ "17.5" ]
+        os: [ "18.2" ]
 
     steps:
       - name: Checkout
@@ -25,6 +25,10 @@ jobs:
       - name: List available iOS runtimes and simulators
         run: |
           xcrun simctl list
+
+      - name: Install pods for Example app
+        working-directory: Example
+        run: pod install
 
       - name: Run UI tests on ${{ matrix.device }} (iOS ${{ matrix.os }})
         run: |
