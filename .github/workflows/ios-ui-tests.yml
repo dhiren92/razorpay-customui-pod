@@ -41,7 +41,14 @@ jobs:
             -workspace Example/razorpay-customui-pod.xcworkspace \
             -scheme razorpay-customui-pod-Example \
             -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.os }}" \
+            -resultBundlePath TestResults.xcresult \
             test
+            
+      - name: Upload Xcode test result bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-ui-tests-${{ matrix.device }}-iOS-${{ matrix.os }}
+          path: TestResults.xcresult
 
   comment-on-success:
     needs: ui-tests
