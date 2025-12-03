@@ -15,8 +15,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        device: [ "iPhone 15" ]
-        os: [ "18.2" ]
+        device: [ "iPhone 16" ]
+        os: [ "18.4" ]
 
     steps:
       - name: Checkout
