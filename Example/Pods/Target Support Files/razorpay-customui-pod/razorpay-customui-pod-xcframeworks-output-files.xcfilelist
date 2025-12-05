@@ -1,0 +1,3 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/RazorpayCustom.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/Razorpay.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/razorpay-customui-pod/RazorpayCore.framework
