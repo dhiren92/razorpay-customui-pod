@@ -313,6 +313,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @protocol RazorpayPaymentCompletionProtocol;
 @class WKWebView;
 @class WKNavigation;
+@class WKNavigationAction;
 @class NSURL;
 @protocol PluginPaymentDelegate;
 SWIFT_CLASS("_TtC14RazorpayCustom28CustomCheckoutImplementation")
@@ -342,6 +343,7 @@ SWIFT_CLASS("_TtC14RazorpayCustom28CustomCheckoutImplementation")
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)er checkoutInstance:(id _Nullable)checkoutInstance;
 - (void)webView:(WKWebView * _Nonnull)webView didFail:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)er checkoutInstance:(id _Nullable)checkoutInstance;
 - (void)webView:(WKWebView * _Nonnull)webView didFinish:(WKNavigation * _Null_unspecified)navigation checkoutInstance:(id _Nullable)checkoutInstance;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyFor:(WKNavigationAction * _Nonnull)navigationAction checkoutInstance:(id _Nullable)checkoutInstance handler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (NSString * _Nonnull)getCardNetworkFromCardNumber:(NSString * _Nonnull)cardNumber checkoutInstance:(id _Nullable)checkoutInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)getAppsWhichSupportUpiWithHandler:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull))handler;
 - (void)getAppsWhichSupportUpiRecurringWithHandler:(void (^ _Nonnull)(NSArray<NSDictionary *> * _Nonnull))handler;
@@ -355,6 +357,7 @@ SWIFT_CLASS("_TtC14RazorpayCustom28CustomCheckoutImplementation")
 - (void)publishUriWith:(NSString * _Nonnull)data checkoutInstance:(id _Nullable)checkoutInstance;
 - (BOOL)setWebView:(WKWebView * _Nonnull)webView error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)setDelegate:(id <RazorpayPaymentCompletionProtocol> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)handleRedirection:(NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -369,7 +372,6 @@ SWIFT_CLASS("_TtC14RazorpayCustom6Otpelf")
 - (void)close;
 @end
 
-@class WKNavigationAction;
 SWIFT_CLASS("_TtC14RazorpayCustom16RazorpayCheckout")
 @interface RazorpayCheckout : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

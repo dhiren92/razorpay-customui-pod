@@ -11,8 +11,8 @@ import Razorpay
 struct PayloadModel {
     var title: String
     var options: [String: Any]
-    var key: String = "rzp_live_JbQIqxBRizNPmu"
-//    var key: String = "rzp_test_1DP5mmOlF5G5ag"
+//    var key: String = "rzp_live_JbQIqxBRizNPmu"
+    var key: String = "rzp_test_1DP5mmOlF5G5ag"
 //    var key: String = "rzp_live_partner_Jgy1T7ZabnnFB1"
 //    var key: String = "rzp_live_5W8oZPBNQPbZDE"
 //    var key: String = "rzp_live_INaX9xm2rADfMM"
@@ -94,9 +94,9 @@ extension MenuVC {
             "contact": "9999912345",
             "method": "card",
             "card[name]": "Test User",
-            "card[number]": "4111111111111111",
+            "card[number]": "4386289407660153",
             "card[expiry_month]": "11",
-            "card[expiry_year]": "26",
+            "card[expiry_year]": "32",
             "card[cvv]": "123",
             "display_logo": false
         ]
@@ -132,12 +132,12 @@ extension MenuVC {
         cardPaymentDict = [:]
         
         cardPaymentDict = [
-            "amount": "10",
-            "currency": "MYR",
+            "amount": "100",
+            "currency": "INR",
             "email": "a@b.com",
             "contact": "9731585653",
             "method": "wallet",
-            "wallet": "touchngo",
+            "wallet": "olamoney",
         ]
         
         self.payloadArray += [PayloadModel(title: "Wallet Payment", options: cardPaymentDict, paymentType: .makePayment)]
@@ -150,9 +150,9 @@ extension MenuVC {
             "contact": "123456789",
             "method": "emi",
             "card[name]": "Test User",
-            "card[number]": "4111111111111111",
+            "card[number]": "4386289407660153",
             "card[expiry_month]": "11",
-            "card[expiry_year]": "23",
+            "card[expiry_year]": "28",
             "emi_duration": "12",
         ]
         

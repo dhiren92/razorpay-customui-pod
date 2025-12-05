@@ -99,6 +99,7 @@ public class TurboPluginManager {
   @objc final public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError er: any Swift.Error, checkoutInstance: Any?)
   @objc final public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError er: any Swift.Error, checkoutInstance: Any?)
   @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!, checkoutInstance: Any?)
+  @objc final public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, checkoutInstance: Any?, handler decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @objc final public func getCardNetwork(fromCardNumber cardNumber: Swift.String, checkoutInstance: Any?) -> Swift.String
   @objc final public func getAppsWhichSupportUpi(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
   @objc final public func getAppsWhichSupportUpiRecurring(handler: @escaping ([[Swift.AnyHashable : Any]]) -> Swift.Void)
@@ -112,6 +113,7 @@ public class TurboPluginManager {
   @objc final public func publishUri(with data: Swift.String, checkoutInstance: Any?)
   @objc final public func setWebView(_ webView: WebKit.WKWebView) throws
   @objc final public func setDelegate(_ delegate: any RazorpayCore.RazorpayPaymentCompletionProtocol) throws
+  @objc final public func handleRedirection(_ url: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
