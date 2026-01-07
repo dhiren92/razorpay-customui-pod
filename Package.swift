@@ -22,7 +22,7 @@ let package = Package(
     targets: [
        .binaryTarget(
             name: "Razorpay",
-            path: "Pod/Razorpay.xcframework"
+            path: "Pod/RazorpayCustom.xcframework"
         ),
         .target(
             name: "RazorpayWrapper",
